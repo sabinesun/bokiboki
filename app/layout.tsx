@@ -19,21 +19,21 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <main className={"flex justify-center flex-col w-full max-w-5xl m-2"}>
+        {/* <main className={"flex justify-center flex-col w-full max-w-5xl m-2"}>
           <div className="flex flex-col gap-1 my-2">
             <hr className="border-[0.5px] border-black w-full" />
             <hr className="border-[0.5px] border-black w-full" />
             <hr className="border-[0.5px] border-black w-full" />
           </div>
-          <Header />
-          {children}
-          <Footer />
+          <Header /> */}
+        {children}
+        {/* <Footer />
           <div className=" flex flex-col gap-1 my-2">
             <hr className="border-[0.5px] border-black w-full" />
             <hr className="border-[0.5px] border-black w-full" />
             <hr className="border-[0.5px] border-black w-full" />
           </div>
-        </main>
+        </main> */}
       </body>
     </html>
   );
