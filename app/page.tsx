@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="flex justify-center">
-      <div className="w-full max-w-[768px]">
+      <div className="w-full max-w-screen-md">
         <img
           src="Menu.jpg"
           alt="bokiboki menu"
