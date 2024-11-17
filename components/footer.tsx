@@ -6,7 +6,7 @@ export const Footer = () => {
       <Typography variant="caption">
         mardi au samedi 12h-15h/18h-21h30
       </Typography>
-      <Typography variant="caption">dimanche 18h-21h30 </Typography>
+      <Typography variant="caption">dimanche 18h-21h30</Typography>
     </div>
   );
 };

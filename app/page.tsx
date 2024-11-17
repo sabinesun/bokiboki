@@ -1,113 +1,94 @@
-import Image from "next/image";
+import {
+  Card,
+  CardDishCaption,
+  CardDishName,
+  CardDishTitle,
+  CardSection,
+  CardSectionName,
+} from "@/components/card/card";
 
 export default function Home() {
-	return (
-		<main className="flex  min-h-screen flex-col items-center justify-between p-24">
-			<div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-				<p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200  lg:p-4 dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:dark:bg-zinc-800/30">
-					Get started by editing&nbsp;
-					<code className="font-mono font-bold">app/page.tsx</code>
-				</p>
-				<div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white lg:static lg:size-auto lg:bg-none dark:from-black dark:via-black">
-					<a
-						className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-						href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						By
-						<Image
-							src="/vercel.svg"
-							alt="Vercel Logo"
-							className="dark:invert"
-							width={100}
-							height={24}
-							priority
-						/>
-					</a>
-				</div>
-			</div>
-
-			<div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40">
-				<Image
-					className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-					src="/next.svg"
-					alt="Next.js Logo"
-					width={180}
-					height={37}
-					priority
-				/>
-			</div>
-
-			<div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-				<a
-					href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-					className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<h2 className={"mb-3 text-2xl font-semibold"}>
-						Docs{" "}
-						<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-							-&gt;
-						</span>
-					</h2>
-					<p className={"m-0 max-w-[30ch] text-sm opacity-50"}>
-						Find in-depth information about Next.js features and API.
-					</p>
-				</a>
-
-				<a
-					href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-					className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<h2 className={"mb-3 text-2xl font-semibold"}>
-						Learn{" "}
-						<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-							-&gt;
-						</span>
-					</h2>
-					<p className={"m-0 max-w-[30ch] text-sm opacity-50"}>
-						Learn about Next.js in an interactive course with&nbsp;quizzes!
-					</p>
-				</a>
-
-				<a
-					href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-					className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<h2 className={"mb-3 text-2xl font-semibold"}>
-						Templates{" "}
-						<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-							-&gt;
-						</span>
-					</h2>
-					<p className={"m-0 max-w-[30ch] text-sm opacity-50"}>
-						Explore starter templates for Next.js.
-					</p>
-				</a>
-
-				<a
-					href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-					className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<h2 className={"mb-3 text-2xl font-semibold"}>
-						Deploy{" "}
-						<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-							-&gt;
-						</span>
-					</h2>
-					<p className={"m-0 max-w-[30ch] text-balance text-sm opacity-50"}>
-						Instantly deploy your Next.js site to a shareable URL with Vercel.
-					</p>
-				</a>
-			</div>
-		</main>
-	);
+  return (
+    <div className="">
+      <Card>
+        <CardSection>
+          <CardSectionName>Fried Chicken</CardSectionName>
+          <CardDishTitle>
+            <CardDishName>Wings</CardDishName>
+            <CardDishCaption>ailes</CardDishCaption>
+          </CardDishTitle>
+        </CardSection>
+      </Card>
+      <div className="border-[0.5px] border-black p-4 relative rounded">
+        <div className="border border-black absolute rounded w-full h-full left-2 top-1" />
+        <div className="relative">
+          <div className="absolute -z-10 font-bold -left-6 top-3">
+            <div className="text-5xl text-[#EBE5F3]">치</div>
+            <div className="text-5xl text-[#EBE5F3]">킨</div>
+          </div>
+          <h2 className="text-2xl font-extrabold pl-2">Fried Chicken</h2>
+          <hr className="border border-black w-full" />
+          <div className="flex w-full justify-between">
+            <div className="flex flex-col relative">
+              <h3 className="text-lg font-bold pt-2 pl-2">Wings</h3>
+              <span className="text-xs absolute bottom-3 pl-2">ailes</span>
+            </div>
+            <table className="w-1/2">
+              <tr>
+                <td>6pcs</td>
+                <td className="flex justify-end">7.90€</td>
+              </tr>
+              <tr>
+                <td>9pcs</td>
+                <td className="flex justify-end">10.90€</td>
+              </tr>
+            </table>
+          </div>
+          <hr className="border-[0.5px] border-black w-full" />
+          <div className="flex w-full justify-between">
+            <div className="flex flex-col relative">
+              <h3 className="text-lg font-bold pl-2">Boneless</h3>
+              <span className="text-xs absolute bottom-3 pl-2 whitespace-nowrap">
+                cuisse désossée
+              </span>
+            </div>
+            <table className="w-1/2">
+              <tr>
+                <td>petite portion</td>
+                <td className="flex justify-end">7.90€</td>
+              </tr>
+              <tr>
+                <td className="whitespace-nowrap">grande portion</td>
+                <td className="flex justify-end">11.90€</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div className="mt-6 relative">
+          <div className="absolute -z-10 font-bold -right-4 -top-2">
+            <div className="text-3xl text-[#EBE5F3]">炒</div>
+            <div className="text-3xl text-[#EBE5F3]">蔬</div>
+            <div className="text-3xl text-[#EBE5F3]">菜</div>
+          </div>
+          <h2 className="text-2xl font-extrabold">Fried Veggie</h2>
+          <hr className="border border-black w-full" />
+          <div className="flex w-full justify-between">
+            <div className="flex space-x-1">
+              <h3 className="text-lg font-bold">Choufleur frit</h3>
+            </div>
+            <table className="w-1/2">
+              <tr>
+                <td>petit</td>
+                <td className="flex justify-end">6.90€</td>
+              </tr>
+              <tr>
+                <td>grand</td>
+                <td className="flex justify-end">9.90€</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
